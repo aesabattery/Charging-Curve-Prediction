@@ -1,0 +1,4 @@
+-RW_21.txt to RW_28.txt: the input data.
+-Charge_reconstruction_CNN_300mV_1020_transfer_scale: the python file for model development
+-models: the folder to save the trained DNN
+-transferbasis: this folder contains the pre-trained model based on the Oxford dataset.
