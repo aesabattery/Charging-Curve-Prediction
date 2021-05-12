@@ -1,2 +1,0 @@
--q_curve_28_419_cell_1.txt to q_curve_28_419_cell_8.txt: the input data.
--Charge_reconstruction_CNN_300mV: the python file for model development
