@@ -1,4 +1,6 @@
 # Charging-Curve-Prediction
-The oxford folder contains the pre-processed data from the Oxford Battery Degradation Dataset 1 [the orignal data can be found at https://ora.ox.ac.uk/objects/uuid:03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac] and the corresponding python file to develop a deep neural network (DNN) that can predict the entire charging curves with 300 mV pieces of charging curve.
+This repository contains data and code for developing deep neural networks to estimate entire charging curves. 
 
-The transfer-nasa folder contains the pre-precessed data from the NASA Randomized Battery Usage Data Set [the orignal data can be found at https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#batteryrnddischarge] and the corresponding python file to apply transfer learning to develop the DNN for curve prediction. 
+Please check readme.txt in each folder for more details.
+
+Some public battery degradation datasets are used, including the Oxford battery degradation dataset 1 [https://ora.ox.ac.uk/objects/uuid:03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac], CALCE dataset [https://calce.umd.edu/data#INR], and the NASA Randomized Battery Usage Data Set [https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#batteryrnddischarge].
