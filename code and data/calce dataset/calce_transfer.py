@@ -55,7 +55,7 @@ mean = entire_series.mean(axis=0)
 entire_series -= mean
 std = entire_series.std(axis=0)
 entire_series /= std
-#%% 数据准备的函数
+#%% 
 def generator(data, lookback, delay, min_index, max_index,
               shuffle=False, batch_size=128, step=1):
     if max_index is None:
@@ -69,7 +69,6 @@ def generator(data, lookback, delay, min_index, max_index,
             if i + batch_size >= max_index:
                 i = min_index + lookback
             rows = np.arange(i, min(i + batch_size, max_index))
-            # i += 1
             i += len(rows)
         samples = np.zeros((len(rows),
                            lookback // step-step,
