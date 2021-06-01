@@ -60,7 +60,6 @@ def generator(data, lookback, delay, min_index, max_index,
             if i + batch_size >= max_index:
                 i = min_index + lookback
             rows = np.arange(i, min(i + batch_size, max_index))
-            # i += 1
             i += len(rows)
         samples = np.zeros((len(rows),
                            lookback // step-step,
@@ -142,7 +141,7 @@ Output_train = train_target_final[index,:]
 
 Input_test = test_gen_final
 Output_test = test_target_final
-#%% 构建网络
+#%% 
 from keras import layers
 model = Sequential()
 model.add(layers.Conv1D(16, 3, activation='relu',padding='causal',
