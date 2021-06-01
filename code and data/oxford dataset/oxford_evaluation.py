@@ -57,8 +57,7 @@ def generator(data, lookback, delay, min_index, max_index,
             if i + batch_size >= max_index:
                 i = min_index + lookback
             rows = np.arange(i, min(i + batch_size, max_index))
-            # i += 1
-            i += len(rows)
+             i += len(rows)
         samples = np.zeros((len(rows),
                            lookback // step-step,
                            data.shape[-1]))
@@ -68,8 +67,8 @@ def generator(data, lookback, delay, min_index, max_index,
             samples[j][:,1] -= data[indices][0,1]
         return samples
 #%% prepare data for each cell and form the training and test dataset 
-lookback_size = 31 # window = 300 mV
-step_size = 1      # sampling step = 10 mV
+lookback_size = 31 # window
+step_size = 1      # sampling step 
 
 # training data
 data_train_temp = []
